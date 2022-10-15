@@ -55,9 +55,9 @@ int main(){
            if(dp[i][j]<0) dp[i][j]+=mod;
       }
       for(int j=2;j<=m;j++){
-          bit]ao.upd(j,a[i][j],dp[i][j]);
+          bit[a[i][j]].upd(j,a[i][j],dp[i][j]);
           if(!dp[i][j]) continue;
-          upd(j,dp[i][j]);
+          bit[0].upd(j,dp[i][j]);
        }
     } 
     cout<<(dp[n][m])%mod<<endl;
